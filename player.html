@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type = "text/css" rel="stylesheet" href = "..\WEBDEV_FGP\index.css">
+  </head>
+
+  <body>
+
+    <ul>
+      <li class="logo"><a class="noHover" href="../WEBDEV_FGP/index.html"><img class="logoPic" src="Images\sanggahan.png"></a></li>
+      
+      <div class="nine">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+      
+      <div class="eight">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+
+      <div class="seven">
+        <li>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Options</B></a>
+          <div class="dropdown-content">
+            <a href="aboutUs.html"><b>About Us</b></a>
+            <a href="#" class="dropbtn"><b>Services</b></a>
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+            <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          </div>
+        </li>
+      </div>
+
+
+    </ul>
+
+    <br>
+
+    <div class="mainBody">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade slidePics">
+          <img class="picture" src="Images\team.jpg">
+        </div>
+
+      </div>
+      <br>
+
+      <div class="textBody">
+      <h1>Player Networking Service</h1>
+      <p>Make new friends today by joining Sanggahan's thriving community. Chat with other players and introduce yourself!</p>
+
+      <div class="row">
+        <div class="column1">
+          <h2>Public/Private Chat</h2>
+          <p>Here in Sanggahan!, we encourage socializing with everyone. Join the public chat and engage in casual banter with people all over Philippines, or private message your friends and talk one on one about anything you desire.</p>
+        </div>
+        <div class="column1">
+          <h2>Rating System</h2>
+          <p>Loved the performance of a player? Want to know if you've done well at your game? With Sanggahan's rating system, users can rate each other and encourage friendly competition between one another.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <br>
+
+    <ul class="footer">
+      <p>Created by: John Paul C. Beltran for WEBDEV2 WF 11:00-2:00</p>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3500); // Change image every 2 seconds
+    }
+    </script>
+
+  </body>
+</html> 

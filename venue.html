@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type = "text/css" rel="stylesheet" href = "..\WEBDEV_FGP\index.css">
+  </head>
+
+  <body>
+
+    <ul>
+      <li class="logo"><a class="noHover" href="../WEBDEV_FGP/index.html"><img class="logoPic" src="Images\sanggahan.png"></a></li>
+      
+      <div class="nine">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+      
+      <div class="eight">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+
+      <div class="seven">
+        <li>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Options</B></a>
+          <div class="dropdown-content">
+            <a href="aboutUs.html"><b>About Us</b></a>
+            <a href="#" class="dropbtn"><b>Services</b></a>
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+            <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          </div>
+        </li>
+      </div>
+
+
+    </ul>
+
+    <br>
+
+    <div class="mainBody">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade slidePics">
+          <img class="picture" src="Images\venue.jpg">
+        </div>
+
+      </div>
+      <br>
+
+      <div class="textBody">
+      <h1>Venue Reservation Service</h1>
+      <p>Can't find a court to play in? Check out our directory of venues near your area and make a reservation!</p>
+
+      <div class="row">
+        <div class="column1">
+          <h2>Play Anywhere, Anytime</h2>
+          <p>Sanggahan! offers players the ability to find and reserve great venues in their area through an online directory that shows sports venues nearby, its community rating, as well as additional information needed, such as what courts are offered, and the ability to join games held at the venue.</p>
+        </div>
+        <div class="column1">
+          <h2>Be a Stakeholder!</h2>
+          <p>Join Sanggahan! today and support your local community by providing players all over the Philippines with safe, quality venues! <a href="stakeholder.html">Please read this FAQ</a> and help Sanggahan grow.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <br>
+
+    <ul class="footer">
+      <p>Created by: John Paul C. Beltran for WEBDEV2 WF 11:00-2:00</p>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3500); // Change image every 2 seconds
+    }
+    </script>
+
+  </body>
+</html> 

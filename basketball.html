@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type = "text/css" rel="stylesheet" href = "..\WEBDEV_FGP\index.css">
+  </head>
+
+  <body>
+
+    <ul>
+      <li class="logo"><a class="noHover" href="../WEBDEV_FGP/index.html"><img class="logoPic" src="Images\sanggahan.png"></a></li>
+      
+      <div class="nine">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+      
+      <div class="eight">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+
+      <div class="seven">
+        <li>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Options</B></a>
+          <div class="dropdown-content">
+            <a href="aboutUs.html"><b>About Us</b></a>
+            <a href="#" class="dropbtn"><b>Services</b></a>
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+            <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          </div>
+        </li>
+      </div>
+
+
+    </ul>
+
+    <br>
+
+    <div class="mainBody">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade slidePics">
+          <img class="picture" src="Images\basketball.jpg">
+        </div>
+      </div>
+      <br>
+
+      <div class="textBody">
+      <h1>Basketball</h1>
+      <p>Invented in 1891 by Canadian—American gym teacher James Naismith in Springfield, Massachusetts, basketball has evolved to become one of the world's most popular and widely viewed sports. The National Basketball Association (NBA) is the most significant professional basketball league in the world in terms of popularity, salaries, talent, and level of competition. Outside North America, the top clubs from national leagues qualify to continental championships such as the Euroleague and FIBA Americas League. The FIBA Basketball World Cup and Men's Olympic Basketball Tournament are the major international events of the sport and attract top national teams from around the world. Each continent hosts regional competitions for national teams, like EuroBasket and FIBA AmeriCup.</p>
+      <p>Basketball is a team sport in which ten players, five on a side, opposing one another on a rectangular court, have in play the primary objective to shoot a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court) while preventing the opposing team from shooting through their own hoop. A field goal is worth two points, unless made from behind the three-point line, when it is worth three. After a foul, timed play stops and the player fouled or designated to shoot a technical foul is given one or more one-point free throws. The team with the most points at the end of the game wins, but if regulation play expires with the score tied, an additional period of play (overtime) is mandated.</p>
+
+      </div>
+    </div>
+
+    <br>
+
+    <ul class="footer">
+      <p>Created by: John Paul C. Beltran for WEBDEV2 WF 11:00-2:00</p>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3500); // Change image every 2 seconds
+    }
+    </script>
+
+  </body>
+</html> 

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type = "text/css" rel="stylesheet" href = "..\WEBDEV_FGP\index.css">
+  </head>
+
+  <body>
+
+    <ul>
+      <li class="logo"><a class="noHover" href="../WEBDEV_FGP/index.html"><img class="logoPic" src="Images\sanggahan.png"></a></li>
+      
+      <div class="nine">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+      
+      <div class="eight">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+            <a href="stakeholder.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+
+      <div class="seven">
+        <li>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Options</B></a>
+          <div class="dropdown-content">
+            <a href="aboutUs.html"><b>About Us</b></a>
+            <a href="#" class="dropbtn"><b>Services</b></a>
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+            <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+
+          </div>
+        </li>
+          
+        <li class="dropdown">
+          </div>
+        </li>
+      </div>
+
+
+    </ul>
+
+    <br>
+
+    <div class="mainBody">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade slidePics">
+          <a href="basketball.html"><img class="picture" src="Images\basketball.jpg"></a>
+          <div class="text">Basketball</div>
+        </div>
+
+        <div class="mySlides fade slidePics">
+          <a href="football.html"><img class="picture" src="Images\football.png"></a>
+          <div class="text">Football</div>
+        </div>
+
+        <div class="mySlides fade slidePics">
+          <a href="soccer.html"><img class="picture" src="Images\soccer.jpg"></a>
+          <div class="text">Soccer</div>
+        </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+      <div class="textBody">
+      <h1>The Home of Modern Sports</h1>
+      <p>Sanggahan! brings sports to your phone and computer</p>
+
+      <div class="row">
+        <div class="column">
+          <h2>Communicate</h2>
+          <img class="picture" src="Images\communication.png">
+          <p>Talk to your teammates no matter when and where with our dedicated messaging feature. Contact individual members of your team, arrange a team meeting with everyone, or simply join the public chat, segregated into different servers depending on your sport, and truly talk to your community!</p>
+        </div>
+        <div class="column">
+          <h2>Organize</h2>
+          <img class="picture" src="Images\organize.png">
+          <p>Create both public and private events where you can invite friends and rivals to play with, or to simply schedule team practices in preparation of a nearing competition. With the dedicated support of Sanggahan's stakeholders, you can set these events at your local, supported sports venue!</p>
+        </div>
+        <div class="column">
+          <h2>Game</h2>
+          <img class="picture" src="Images\sport.png">
+          <p>With our live score tracking feature, as well as in-depth reports of current ongoing games and past games, you can follow and participate in games all over the Philippines. Follow your favorite player, or even track your own progress by creating a profile on our mobile application!</p>
+        </div>
+      </div>
+
+      <h1>Create your account, and start your first game today!</h1>
+
+      </div>
+    </div>
+
+    <br>
+
+    <ul class="footer">
+      <p>Created by: John Paul C. Beltran for WEBDEV2 WF 11:00-2:00</p>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3500); // Change image every 2 seconds
+    }
+    </script>
+
+  </body>
+</html> 

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type = "text/css" rel="stylesheet" href = "..\WEBDEV_FGP\index.css">
+  </head>
+
+  <body>
+
+    <ul>
+      <li class="logo"><a class="noHover" href="../WEBDEV_FGP/index.html"><img class="logoPic" src="Images\sanggahan.png"></a></li>
+      
+      <div class="nine">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+      
+      <div class="eight">
+        <li>
+          <a href="aboutUs.html" class="dropbtn"><b>About Us</b></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Services Offered</B></a>
+          <div class="dropdown-content">
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+          <div class="dropdown-content">
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+          </div>
+        </li>
+      </div>
+
+      <div class="seven">
+        <li>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><B>Options</B></a>
+          <div class="dropdown-content">
+            <a href="aboutUs.html"><b>About Us</b></a>
+            <a href="#" class="dropbtn"><b>Services</b></a>
+            <a href="equipment.html">Equipment Rental</a>
+            <a href="venue.html">Venue Reservation</a>
+            <a href="event.html">Events & Scheduling</a>
+            <a href="player.html">Player Networking</a>
+            <a href="sports.html" class="dropbtn"><b>Sports</b></a>
+            <a href="basketball.html">Basketball</a>
+            <a href="football.html">Football</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="tennis.html">Tennis</a>
+
+          </div>
+        </li>
+          
+         
+        <li class="dropdown">
+          </div>
+        </li>
+      </div>
+
+
+    </ul>
+
+    <br>
+
+    <div class="mainBody">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade slidePics">
+          <img class="picture" src="Images\soccer.jpg">
+        </div>
+      </div>
+      <br>
+
+      <div class="textBody">
+      <h1>Soccer</h1>
+      <p>Association football, more commonly known as football or soccer, is a team sport played between two teams of eleven players with a spherical ball. It is played by 250 million players in over 200 countries and dependencies, making it the world's most popular sport. The game is played on a rectangular field with a goal at each end. The object of the game is to score by moving the ball beyond the goal line into the opposing goal.</p>
+      <p>Players are not allowed to touch the ball with hands or arms while it is in play, save for the goalkeepers within the penalty area. Other players mainly use their feet to strike or pass the ball, but may also use any other part of their body except the hands and the arms. The team that scores most goals by the end of the match wins. If the score is level at the end of the game, either a draw is declared or the game goes into extra time or a penalty shootout depending on the format of the competition. Association football is governed internationally by the International Federation of Association Football (FIFA; French: Fédération Internationale de Football Association), which organises World Cups for both men and women every four years.</p>
+
+      </div>
+    </div>
+
+    <br>
+
+    <ul class="footer">
+      <p>Created by: John Paul C. Beltran for WEBDEV2 WF 11:00-2:00</p>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3500); // Change image every 2 seconds
+    }
+    </script>
+
+  </body>
+</html> 
