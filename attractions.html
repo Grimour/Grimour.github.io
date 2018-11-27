@@ -1,147 +1,233 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Citylight Hotel</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<head>
+  <title>Dagupan Tourism Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
     
-    <header role="banner">
-     
-      <nav class="navbar navbar-expand-md navbar-dark bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Citylight Hotel</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
 
-          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
-            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="rooms.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Facilities</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="rooms.html">Rooms</a>
-                  <a class="dropdown-item" href="function.html">Function Halls</a>
-                  <a class="dropdown-item active" href="attractions.html">Attractions</a>
-                </div>
+  .container {
+    width:85%;
+  }
 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="offers.html">Special Offers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+    .container {
+    width:100%;
+    }
+  }
 
-               <li class="nav-item cta">
-                <a class="nav-link" href="booknow.html"><span>Book Now</span></a>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- END header -->
+  </style>
+</head>
 
-    <section class="site-hero overlay" data-stellar-background-ratio="1" style="background-image: url(images/big_image_1.jpg);">
-      <div class="container">
-        <div class="row align-items-center site-hero-inner justify-content-center">
-          <div class="col-md-12 text-center">
+<body style="background-color: #9099A2;">
 
-            <div class="mb-5 element-animate">
-              <h1>The Citylight Attractions</h1>
-              <p>Food, Bar, and Coffee</p>
-            </div>
+<nav class="navbar navbar-inverse" style="background-color:white;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: black;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html" style="color:black; font-size:24px;"><b>Dagupan</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" style="color:black;">Home</a></li>
+        <li class="active"><a href="attractions.html" style="color:white;">Attractions</a></li>
+        <li><a href="gallery.html" style="color:black;">Gallery</a></li>
+        <li><a href="about.html" style="color:black;">About</a></li>
+        <li><a href="contact.html" style="color:black;">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-          </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./images/c1.jpg" alt="Image">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="./images/c2.jpeg" alt="Image">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="./images/c3.jpeg" alt="Image">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<br><br>
+
+<div class="container text-center" style="background-color:white;">    
+  <br>
+  <h1>Looking for Attractions?</h1>
+  <h4>You've come to the right place!</h4>
+  <h6>Source: tripadvisor.com</h6>
+  <br>
+  <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="well">
+          <img src="./images/a1.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h3>Tondaligan Beach</h3>
+          #1 of 9 things to do in Dagupan
+          <br>
+          <h5>Enjoy a warm, cozy stay at the Tondaligan Beach, where the party never stops! Have fun in its fine, white sand, and dive into the waves to cool off after a hard day of work. Play with your friends and family and have the greatest vacation today!</h5>
         </div>
       </div>
-    </section>
-    <!-- END section -->
-
-
-    <section class="site-section bg-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-12 heading-wrap text-center">
-            <h4 class="sub-heading">Eat Up</h4>
-              <h2 class="heading">Fine Dining</h2>
-          </div>
-        </div>
-        <div class="row ">
-          <center>
-          <div class="col-md-8">
-            <div class="media d-block room mb-0">
-                <img src="images/salt.jpg" alt="Generic placeholder image" class="img-fluid">
-              <div class="media-body">
-                <h3 class="mt-0"><a href="#">Salt and Pepper Restaurant</a></h3>
-                <p>Known for its breakfast and lunch buffet, Citylight Hotel’s Salt and Pepper Restaurant serves mouth-watering buffet and Ala Carte Dinner from Mondays to Sundays. Get to experience sumptuous Filipino Breakfast Buffet from 6:30am to 10:00am and Asian Lunch Buffet from 11:30pm to 2:00pm with your family and friends! For a more intimate dining experience join us for our Ala Carte Dinner from 6:00pm to 10:00pm.</p>
-              </div>
-            </div>
-          </div>
-          </center>
-        </div>
-        <br><br>
-        <div class="row ">
-          <center>
-          <div class="col-md-8">
-            <div class="media d-block room mb-0">
-                <img src="images/bar.jpg" alt="Generic placeholder image" class="img-fluid">
-              <div class="media-body">
-                <h3 class="mt-0"><a href="#">The Bar</a></h3>
-                <p>Current, fresh, hip and dynamic- the Citylight Hotel bar is always in full swing, from your day's end up until midnight. With a wide variety of cocktails, wines, beers and even non-alcoholic beverages, it definitely is the ideal hangout for all those who want to let their hair down or feel footloose after a day of demanding activities. With great hip music, the Citylight Hotel bar atmosphere is constantly up and high with energy and enjoyment! So take a sip and experience coolness and fun at the Citylight Hotel bar with your friends and family!</p>
-              </div>
-            </div>
-          </div>
-          </center>
-        </div>
-        <br><br>
-        <div class="row ">
-          <center>
-          <div class="col-md-8">
-            <div class="media d-block room mb-0">
-                <img src="images/coffee1.jpg" alt="Generic placeholder image" class="img-fluid">
-              <div class="media-body">
-                <h3 class="mt-0"><a href="#">The Coffee Shop</a></h3>
-                <p>Enjoy freshly baked breads, cakes, sandwiches and delectable pastas at Citylight Hotel’s coffeeshop. Our premium teas and coffee brews are the perfect combination to Baguio’s cool breeze or our shakes and smoothies to freshen you up on a hot summer day. The Coffee Shop is the perfect spot to chill and savour a sweet slice of cake.</p>
-              </div>
-            </div>
-          </div>
-          </center>
+      <div class="col-sm-4">
+        <div class="well">
+          <img src="./images/a2.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h3>Bonuan Blue Beach</h3>
+          #2 of 9 things to do in Dagupan
+          <br>
+          <h5>Truly deserving of being part of Dagupan's top 10 tourist destinations, the Bonuan Blue Beach is a wonder to see. With rich blue waters that stretch into the horizon, it's the perfect place to calm down and relax. Listen to the waves and enjoy.</h5>
         </div>
       </div>
-    </section>
-   
-   
-    <footer class="site-footer">
+      <div class="col-sm-4">
+        <div class="well">
+          <img src="./images/a3.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h3>Tondaligan People's Park</h3>
+          #3 of 9 things to do in Dagupan
+          <br>
+          <h5>Want to enjoy Dagupan's rich culture? Come to Tondaligan People's Park and partake in the local's daily festivities. Interact with the locals here, and play the games with them! The facilities are clean, and the air is as clean as can be.</h5>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="well">
+          <img src="./images/a4.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h3>Dagupan City Museum</h3>
+          #4 of 9 things to do in Dagupan
+          <br>
+          <h5>Learn to appreciate culture by going to the Dagupan City Museum, where the rich and deep culture of the Dagupan and Philippine is contained. Looked into the past and see how our ancestors lived, and how the past has shaped us today.</h5>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="well">
+          <img src="./images/a5.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h3>Pantal River</h3>
+          #5 of 9 things to do in Dagupan
+          <br>
+          <h5>Want to take a quick swim? Go to the Pantal River, where the locals live, fish, and swim in. With such clear and clean water, there's no way to get a better vacation that coming to this famous tourist spot. Come now, today! Hahah.</h5>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="well">
+          <img src="./images/a6.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h3>CSI</h3>
+          #6 of 9 things to do in Dagupan
+          <br>
+          <h5>Need to empty your wallet? Spend it all in CSI, one of Dagupan's greatest malls! With an amazing inventory from the supermarkets, to the private shops, as well as the fast food, there's everything here that you'd ever want to buy.</h5>
+        </div>
+      </div>
+    </div>    
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="well">
+          <img src="./images/a7.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h3>San Roque Dam</h3>
+          #7 of 9 things to do in Dagupan
+          <br>
+          <h5>Enjoy the clean and fresh air atop the San Roque Dam, where water from the nearby river is kept at bay by the giant dam that is blocking it. Well, I think that's how dams work, but this is a tourist site, so just visit anyways! It's free, and it's amazing.</h5>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="well">
+          <img src="./images/a8.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h3>Japanese-Philippine Friendship Garden</h3>
+          #8 of 9 things to do in Dagupan
+          <br>
+          <h5>Come here and pay respects to the Japanese-Philippine Friendship Garden. A site dedicated to the past Japanese colonization, and its eventual friendly turn, visit the Friendship Garden today and bask in the great atmosphere of history.</h5>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="well">
+          <img src="./images/a9.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h3>Stillwater Spa and Beauty Lounge</h3>
+          #9 of 9 things to do in Dagupan
+          <br>
+          <h5>Tired and in great need of rest? Visit Stillwater Spa today and feel reinvigorated by a professional massage given by the talented staff. A short time here can help with you with any ailments and bring heavenly relaxation to you today.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="well">
+        <img src="./images/a10.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <h3>Baguio Festival </h3>
+        The Best Event in Dagupan
+        <br>
+        <h5>The Bangus Festival is an annual celebration in the city of Dagupan.  It highlights the city’s rich milk fish aquaculture industry in the province of Pangasinan and in the country.<br><br>On the 3rd of May 2003, the populace of Dagupan City created an event as part of the Bangus Festival, the longest grilled “bangus” street party measuring 1,007.56 meters (3,305.6 feet).  It broke Canchia’s, Peru 613 meters (2.011 feet long record set in November 1999.  Hence, the city gained the Guinness World Record of the longest barbecued grill worldwide.Alongside, cooking experts participated in the cooking festival of the milk fish dishes such as sinigang, kilawen, daing and the local favorite pigar-pigar to delight the taste of the local crowd as well as tourists.  Through this competition the “100 Ways to Cook Bangus” was reared, too.<br><br>To this day, a variety of restaurants serve the dishes in the area of Bonuan – Tondaligan district fronting the beach of Lingayen Gulf. The succulent taste of the milk fish in the city is due to the fact that it is raised in fish pen within the salty water of Lingayen Gulf. The milk fish (scientific name is Chano chanos) is of symmetrical streamlined appearance, and a sizeable forked caudal fin generally feeding on algae and invertebrates due to its absence of teeth.  The usual size in length ready for the market is fourteen (14) inches. The Bangus Festival has been one of the most awaited celebrations in the province of Pangasinan as it is the melting pot of Northern Philippines.</h5>
+      </div>
+    </div>
+  </div>
+</body>
+<br>
+<footer class="site-footer">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-4">
             <h3>Contact Support</h3>
             <p><a href="tel://">(074) 442.8080</a></p>
-            <p><a>245 Upper General Luna Rd.</a></p>
-            <p><a>Baguio City 2600</a></p>
+            <p><a>AB Fernandez E Ave, Downtown District, Dagupan</a></p>
+            <p><a>2400 Pangasinan</a></p>
           </div>
           <div class="col-md-4">
             <h3>Connect With Us</h3>
@@ -158,38 +244,16 @@
             <p>With 24/7 support, ask us anything and we will accommodate you</p>
             <form action="#" class="subscribe">
               <div class="form-group">
-                <button type="submit"><span class="ion-ios-arrow-thin-right"></span></button>
                 <input type="email" class="form-control" placeholder="Enter email">
               </div>
-              
             </form>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-7 text-center">
-            &copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </div>
-        </div>
       </div>
+
+<center>Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved</center>
+
     </footer>
     <!-- END footer -->
-    
-    <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
-
-    <script src="js/main.js"></script>
-  </body>
+</body>
 </html>

@@ -1,164 +1,422 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Citylight Hotel</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Dagupan Tourism Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
     
-    <header role="banner">
-     
-      <nav class="navbar navbar-expand-md navbar-dark bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Citylight Hotel</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
 
-          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
-            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="rooms.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Facilities</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="rooms.html">Rooms</a>
-                  <a class="dropdown-item" href="function.html">Function Halls</a>
-                  <a class="dropdown-item active" href="attractions.html">Attractions</a>
-                </div>
+  .container {
+    width:85%;
+  }
 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="offers.html">Special Offers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+    .container {
+    width:100%;
+    }
+  }
 
-               <li class="nav-item cta">
-                <a class="nav-link" href="booknow.html"><span>Book Now</span></a>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- END header -->
+  </style>
+</head>
 
-    <section class="site-hero overlay" data-stellar-background-ratio="1" style="background-image: url(images/big_image_1.jpg);">
-      <div class="container">
-        <div class="row align-items-center site-hero-inner justify-content-center">
-          <div class="col-md-12 text-center">
+<body style="background-color: #9099A2;">
 
-            <div class="mb-5 element-animate">
-              <h1>Contact Us</h1>
-              <p>Available support 24/7</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
+<nav class="navbar navbar-inverse" style="background-color:white;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: black;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html" style="color:black; font-size:24px;"><b>Dagupan</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" style="color:black;">Home</a></li>
+        <li><a href="attractions.html" style="color:black;">Attractions</a></li>
+        <li><a href="gallery.html" style="color:black;">Gallery</a></li>
+        <li><a href="about.html" style="color:black;">About</a></li>
+        <li class="active"><a href="contact.html" style="color:white;">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
+<br><br>
 
-    <section class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="mb-5">Contact Form</h2>
-          <form action="#" method="post">
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="name">Name</label>
-                      <input type="text" id="name" class="form-control ">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="phone">Phone</label>
-                      <input type="text" id="phone" class="form-control ">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="email">Email</label>
-                      <input type="email" id="email" class="form-control ">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="message">Write Message</label>
-                      <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input type="submit" value="Send Message" class="btn btn-primary">
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col-md-1"></div>
-              <div class="col-md-5">
-                <h3 class="mb-5">Citylight Hotel</h3>
-                <p class="mb-5"><center><img src="images/city.png" alt="" class="img-fluid"></center></p>
-                <p>
-                  For inquiries and reservations:<br>
-                  <br>
-                  Landline: (074) 442-8080<br>
-                  Fax: (074) 424-6048<br>
-                  Smart: (+63) 919-994-4110<br>
-                  Globe: (+63) 917-629-2761<br>
-                  Sun: (+63) 923-505-5184<br>
-                  Manila line: (02) 546-9846<br>
-                  Email: citylighthotel@yahoo.com<br>
-                  <br>
-                  For function inquiries: <br>
-                  <br>
-                  Globe: (+63) 917-799-7027<br>
-                  Email: citylighthotelsam@yahoo.com.ph<br>
-                  <br>
-                  Address: 245 Upper General Luna Rd. Baguio City, Philippines 2600<br>
-                  <br>
-                  Facebook: www.facebook.com/citylighthotel
-                </p>
-              </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
+<div class="container text-center" style="background-color:white;">    
+<div class="main-content">
+  <h3 class="title">Contact Us</h3>
+    <center>
+    <article>
+      <table class="table">
+        <tbody>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>CITY MAYOR’S OFFICE</strong></td>
+        <td style="width: 352px; height: 48px;">HON. BELEN T. FERNANDEZ</td>
+        <td style="width: 324px; height: 48px;">523-7606</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">ADMINISTRATOR’S OFFICE</td>
+        <td style="width: 352px; height: 48px;">ATTY. FARAH MARIE G. DECANO</td>
+        <td style="width: 324px; height: 48px;">523-0803 /522-8818</td>
+        </tr>
+        <tr style="height: 96px;">
+        <td style="width: 15px; height: 96px;"></td>
+        <td style="width: 377px; height: 96px;">Administrative Division<p></p>
+        <p>Personnel (HR)</p></td>
+        <td style="width: 352px; height: 96px;">MS. LANA Q. BALOLONG</td>
+        <td style="width: 324px; height: 96px;">529-7493</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">ASTRODOME</td>
+        <td style="width: 352px; height: 48px;">MR. RENATO “JACKAL” M. VIDAL</td>
+        <td style="width: 324px; height: 48px;">515-2979</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Anti-Littering &nbsp;Task Force</td>
+        <td style="width: 352px; height: 24px;">MR. JAIME “JONG” SERNA</td>
+        <td style="width: 324px; height: 24px;">632-2627 / 0939 381 4828</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">City Action Service Team (CAST)</td>
+        <td style="width: 352px; height: 24px;">&nbsp;SPO4 CARLITO OCAMPO</td>
+        <td style="width: 324px; height: 24px;">529-1632</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">Public Assistance Response Mgt. Ctr. (PARMC)</td>
+        <td style="width: 352px; height: 48px;">MS. MELYKHEN R. BAUZON</td>
+        <td style="width: 324px; height: 48px;">653-4814</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">CDRRMC</td>
+        <td style="width: 352px; height: 48px;">MR. RONALD DE GUZMAN, LDRRMO IV</td>
+        <td style="width: 324px; height: 48px;">540-0363</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">CESO</td>
+        <td style="width: 352px; height: 24px;">MS. JOCELYN Z. SIAPNO</td>
+        <td style="width: 324px; height: 24px;">523-7404</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">City Legal Officer</td>
+        <td style="width: 352px; height: 48px;">ATTY. GERALDINE FRANCISCO</td>
+        <td style="width: 324px; height: 48px;">529-5360</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Executive Assistant</td>
+        <td style="width: 352px; height: 24px;"></td>
+        <td style="width: 324px; height: 24px;">523-0803</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;"></td>
+        <td style="width: 352px; height: 24px;">MR. MELCHOR OWEN TAN</td>
+        <td style="width: 324px; height: 24px;">522-3967 (GSO)</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">Information Comm. Technology (ICT)</td>
+        <td style="width: 352px; height: 48px;">MR. RYAN D. CASTAÑEDA, EA III</td>
+        <td style="width: 324px; height: 48px;">637-5383 / 637-5407</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Material Recovery Facility (MRF)</td>
+        <td style="width: 352px; height: 24px;">ENGR. SAMUEL CLORES</td>
+        <td style="width: 324px; height: 24px;">515-2979 / 0930 245 9501</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">TF Prevention &amp; Protection of Street Vulnerables</td>
+        <td style="width: 352px; height: 48px;">MS. LEILA D. NATIVIDAD</td>
+        <td style="width: 324px; height: 48px;">529-6934</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">Gender and Development (GAD)</td>
+        <td style="width: 352px; height: 48px;">MR. KIM PARAS, Focal Person</td>
+        <td style="width: 324px; height: 48px;">540-6020 (POPCOM)</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">Tondaligan Admin.</td>
+        <td style="width: 352px; height: 48px;">MR. ALBERTO M. GREGORIO</td>
+        <td style="width: 324px; height: 48px;">0943-334-2124</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">Pavilion</td>
+        <td style="width: 352px; height: 48px;">ENGR. SAMUEL CLORES, Maint. MRF-Bon. Boquig</td>
+        <td style="width: 324px; height: 48px;">0930-245-9504</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Wellness Promotion Desk</td>
+        <td style="width: 352px; height: 24px;"></td>
+        <td style="width: 324px; height: 24px;"></td>
+        </tr>
+        <tr style="height: 72px;">
+        <td style="width: 392px; height: 72px;" colspan="2"><strong>CITY ACCOUNTING</strong></td>
+        <td style="width: 352px; height: 72px;">MS. MELISSA G. MENDOZA</td>
+        <td style="width: 324px; height: 72px;">522-2561/ Brgy. Accounting 522-6532 / 515-3969</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>CITY AGRICULTURE</strong></td>
+        <td style="width: 352px; height: 24px;">MS. EMMA J. MOLINA</td>
+        <td style="width: 324px; height: 24px;">523-1228 /&nbsp;523-4829</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>CITY ASSESSOR’S OFFICE</strong></td>
+        <td style="width: 352px; height: 24px;">ENGR. ROLAND SUNI</td>
+        <td style="width: 324px; height: 24px;">522-5674</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>CITY BUDGET OFFICE</strong></td>
+        <td style="width: 352px; height: 24px;">MS. LUZ F. DE GUZMAN</td>
+        <td style="width: 324px; height: 24px;">515-2928 / 523-4736</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>CITY CIVIL REGISTRY</strong></td>
+        <td style="width: 352px; height: 24px;">MS. MARRIEN N. MEJIA</td>
+        <td style="width: 324px; height: 24px;">522-7384</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>CITY ENGINEERING</strong></td>
+        <td style="width: 352px; height: 48px;">ENGR. MA. VIRGINIA V. ROSARIO</td>
+        <td style="width: 324px; height: 48px;">522-1048 / 522-1185 / 515-6703</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>CITY HEALTH OFFICE</strong></td>
+        <td style="width: 352px; height: 24px;">DR. OPHELIA T. RIVERA</td>
+        <td style="width: 324px; height: 24px;">522-8206 / 523-1236</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>CITY INFORMATION OFFICE</strong></td>
+        <td style="width: 352px; height: 48px;">MS. LENNY GRACE C. BASA</td>
+        <td style="width: 324px; height: 48px;">632-2013</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>CITY LEGAL OFFICE</strong></td>
+        <td style="width: 352px; height: 48px;">ATTY. GERALDINE FRANCISCO</td>
+        <td style="width: 324px; height: 48px;">529-5360</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>CITY LIBRARY</strong></td>
+        <td style="width: 352px; height: 24px;">MS. CORAZON LANGIT</td>
+        <td style="width: 324px; height: 24px;">523-5225</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>CITY NUTRITION OFFICE</strong></td>
+        <td style="width: 352px; height: 24px;">&nbsp;MS. ANA MARIEL LOPEZ</td>
+        <td style="width: 324px; height: 24px;">636-9843</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>CITY PLANNING &amp; DEV’T. OFFICE</strong></td>
+        <td style="width: 352px; height: 48px;">ENGR. JOSEPHINE CORPUZ</td>
+        <td style="width: 324px; height: 48px;">522-4018</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>CITY POPULATION OFFICE</strong></td>
+        <td style="width: 352px; height: 24px;">MS. LEAH L. AQUINO</td>
+        <td style="width: 324px; height: 24px;">540-6020</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>CITY SOCIAL WELFARE &amp; DEV’T.OFFICE-OIC</strong></td>
+        <td style="width: 352px; height: 48px;">MS. LEAH L. AQUINO, OIC</td>
+        <td style="width: 324px; height: 48px;">522-7837 / 515-3140 / 632-2566</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">STAC</td>
+        <td style="width: 352px; height: 24px;"></td>
+        <td style="width: 324px; height: 24px;">515-4080</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">SENIOR CITIZEN</td>
+        <td style="width: 352px; height: 48px;">ATTY. CORNELIA ESPAÑOL, OSCA Head</td>
+        <td style="width: 324px; height: 48px;">523-3110 or 516-2631</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;"></td>
+        <td style="width: 352px; height: 48px;">Mrs. Luz Geminiano, FSCAP President</td>
+        <td style="width: 324px; height: 48px;"></td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>CITY TREASURY</strong></td>
+        <td style="width: 352px; height: 48px;">MS. ROMELITA F. ALCANTARA</td>
+        <td style="width: 324px; height: 48px;">522-8276</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Administrative Division</td>
+        <td style="width: 352px; height: 24px;"></td>
+        <td style="width: 324px; height: 24px;">522-8276</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Cash Disbursement</td>
+        <td style="width: 352px; height: 24px;">MS. ROSIE MACARANAS</td>
+        <td style="width: 324px; height: 24px;">529-9455 /&nbsp;515-5895</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Cash Receipt</td>
+        <td style="width: 352px; height: 24px;">MS. CHRISTINE MANALO</td>
+        <td style="width: 324px; height: 24px;">515-6348 / 0925 821 1987</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">Fiscal Management</td>
+        <td style="width: 352px; height: 48px;">MS. ROSIE MACARANAS / Edith / Bona</td>
+        <td style="width: 324px; height: 48px;">632-2063 / 0922 884 6335</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Land Tax, OIC</td>
+        <td style="width: 352px; height: 24px;">MS. CHRISTINE MANALO</td>
+        <td style="width: 324px; height: 24px;">515-7139 / 515-6293</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Inspection Division</td>
+        <td style="width: 352px; height: 24px;">MR. SANTIAGO VIRAY</td>
+        <td style="width: 324px; height: 48px;" rowspan="2">516-7139 /<p></p>
+        <p>516-2593</p></td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Licensing Division</td>
+        <td style="width: 352px; height: 24px;">MS. ZENAIDA VILLAMIL</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">Malimgas Market Admin.</td>
+        <td style="width: 352px; height: 48px;">ENGR. NAPOLEON NAZARENO, JR.</td>
+        <td style="width: 324px; height: 48px;"></td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Market Division</td>
+        <td style="width: 352px; height: 24px;">MR. AGUEDO STA. MARIA</td>
+        <td style="width: 324px; height: 24px;">529-9963</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">OSBC</td>
+        <td style="width: 352px; height: 24px;">MR. RANDOLF UBANDO</td>
+        <td style="width: 324px; height: 24px;">515-4780 / 522-3943</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 15px; height: 24px;"></td>
+        <td style="width: 377px; height: 24px;">Supplies</td>
+        <td style="width: 352px; height: 24px;">Mezzanine</td>
+        <td style="width: 324px; height: 24px;">515-7160</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>CITY VETERINARY</strong></td>
+        <td style="width: 352px; height: 48px;">DR. DANIEL PAOLO Q. GARCIA</td>
+        <td style="width: 324px; height: 48px;">540-6631 – Malimgas Market</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;">TF DOMESTIC ANIMAL &amp;LIVESTOCK PROTECTION</td>
+        <td style="width: 352px; height: 48px;">DR. DANIEL PAOLO Q. GARCIA</td>
+        <td style="width: 324px; height: 48px;">632-2627, Cleanliness &amp; Beautification Office</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>GENERAL SERVICES OFFICE</strong></td>
+        <td style="width: 352px; height: 24px;">ENGR. MELCHOR GUIANG</td>
+        <td style="width: 324px; height: 24px;">522-3967</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>MUSEUM / CULTURE &amp; ARTS</strong></td>
+        <td style="width: 352px; height: 48px;">MS. ZENAIDA SINLAO / MS. SHARON MARAMBA</td>
+        <td style="width: 324px; height: 48px;">523-1007</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>PUBLIC ORDER AND SAFETY OFFICE</strong></td>
+        <td style="width: 352px; height: 48px;">SPO4 CARLITO OCAMPO, EA III</td>
+        <td style="width: 324px; height: 48px;">529-1632</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>SANGGUNIANG PANLUNGSOD</strong></td>
+        <td style="width: 352px; height: 48px;">VM MARC BRIAN C. LIM</td>
+        <td style="width: 324px; height: 48px;">522 1691 (2nd floor)</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 15px; height: 48px;"></td>
+        <td style="width: 377px; height: 48px;"></td>
+        <td style="width: 352px; height: 48px;">MR. RYAN C. RAVANZO</td>
+        <td style="width: 324px; height: 48px;">529-6184 (ground floor), Rea Manuel</td>
+        </tr>
+        <tr style="height: 24px;">
+        <td style="width: 392px; height: 24px;" colspan="2"><strong>TOURISM</strong></td>
+        <td style="width: 352px; height: 24px;">MS. SHARON MARAMBA</td>
+        <td style="width: 324px; height: 24px;">523-1007</td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 392px; height: 48px;" colspan="2"><strong>WASTE MANAGEMENT DIVISION -OIC / CDRRMC</strong></td>
+        <td style="width: 352px; height: 48px;">MR. RONALD DE GUZMAN</td>
+        <td style="width: 324px; height: 48px;">529-9385 /&nbsp;653-3189 (PARMC)</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+</center>
+</div>
+</div>
+<br>
 
-
-   
-    <footer class="site-footer">
+<footer class="site-footer">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-4">
             <h3>Contact Support</h3>
             <p><a href="tel://">(074) 442.8080</a></p>
-            <p><a>245 Upper General Luna Rd.</a></p>
-            <p><a>Baguio City 2600</a></p>
+            <p><a>AB Fernandez E Ave, Downtown District, Dagupan</a></p>
+            <p><a>2400 Pangasinan</a></p>
           </div>
           <div class="col-md-4">
             <h3>Connect With Us</h3>
@@ -175,38 +433,16 @@
             <p>With 24/7 support, ask us anything and we will accommodate you</p>
             <form action="#" class="subscribe">
               <div class="form-group">
-                <button type="submit"><span class="ion-ios-arrow-thin-right"></span></button>
                 <input type="email" class="form-control" placeholder="Enter email">
               </div>
-              
             </form>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-7 text-center">
-            &copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </div>
-        </div>
       </div>
+
+<center>Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved</center>
+
     </footer>
     <!-- END footer -->
-    
-    <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
-
-    <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
